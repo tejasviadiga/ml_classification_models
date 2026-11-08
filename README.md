@@ -38,10 +38,10 @@ Predict whether a breast tumour is **malignant** or **benign** from numeric meas
     └── metrics_summary.csv
 ```
 
-Python Version Used : 
+### Python Version Used :
 Python 3.13
 
-Run locally:
+### Run locally:
 
 ```bash
 pip3 install -r requirements.txt
