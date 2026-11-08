@@ -20,7 +20,7 @@ Predict whether a breast tumour is **malignant** or **benign** from numeric meas
 - **Preprocessing:** `StandardScaler` inside the pipeline for Logistic Regression, KNN and SVM, so each saved model file carries its own scaling. Decision Tree and Gaussian Naive Bayes use raw features.
 
 ## c. GitHub repository link
-`https://github.com/tejasviadiga/ml_classification_models/tree/main`
+https://github.com/tejasviadiga/ml_classification_models/tree/main
 
 ```
 .
