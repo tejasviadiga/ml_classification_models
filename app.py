@@ -13,7 +13,7 @@ st.set_page_config(page_title="Breast Cancer Classifier Comparison", layout="wid
 
 MODEL_DIR = "model"
 TARGET = "Diagnosis"
-CLASS_NAMES = ["malignant", "benign"]
+CLASS_NAMES = ["benign", "malignant"]
 MODEL_FILES = {
     "Logistic Regression": "logistic_regression.joblib",
     "Decision Tree": "decision_tree.joblib",
@@ -49,8 +49,8 @@ with st.sidebar:
     st.header("Controls")
     uploaded = st.file_uploader("Upload test CSV", type="csv")
     model_name = st.selectbox("Select model", list(MODEL_FILES))
-    st.markdown("The CSV must contain all 30 feature columns plus a `Decision` "
-                "column (0 = malignant, 1 = benign).")
+    st.markdown("The CSV must contain all 30 feature columns plus a `Diagnosis` "
+                "column (0 = benign, 1 = malignant).")
     if os.path.exists("test_data.csv"):
         with open("test_data.csv", "rb") as f:
             st.download_button("Download sample test_data.csv", f, "test_data.csv", "text/csv")
